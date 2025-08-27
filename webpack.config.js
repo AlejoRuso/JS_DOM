@@ -15,7 +15,10 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-        },
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       },
       {
         test: /\.css$/i,
@@ -33,7 +36,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: './dist',
+    static: './dist',
   },
   mode: 'development',
 };
