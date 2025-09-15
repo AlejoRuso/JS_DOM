@@ -7,7 +7,6 @@
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --open",
     "lint": "eslint .",
-    "test": "jest",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {

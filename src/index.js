@@ -31,10 +31,12 @@ function placeCharacter(position) {
   // Создаем img элемент
   const img = document.createElement('img');
   img.src = goblinImage;
+  img.alt = 'Goblin character'; // Добавляем атрибут alt
   img.classList.add('character');
-  // Находим ячейку по позиции и добавляем img
+  
+  // Находим ячейку по позиции и добавляем img с помощью append
   const cells = document.querySelectorAll('.cell');
-  cells[position].appendChild(img);
+  cells[position].append(img); // Заменяем appendChild на append
   currentPosition = position;
 }
 
