@@ -11,7 +11,7 @@ function createGameBoard() {
     const cell = document.createElement('div');
     cell.classList.add('cell');
     cell.dataset.index = i;
-    gameBoard.appendChild(cell);
+    gameBoard.append(cell);
   }
 }
 
