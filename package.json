@@ -1,6 +1,7 @@
 {
   "name": "hw_dom",
   "version": "1.0.0",
+  "license": "MIT",
   "description": "Moving element game",
   "main": "src/index.js",
   "scripts": {
