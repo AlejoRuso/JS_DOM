@@ -33,7 +33,7 @@ function placeCharacter(position) {
   img.src = goblinImage;
   img.alt = 'Goblin character'; // Добавляем атрибут alt
   img.classList.add('character');
-  
+
   // Находим ячейку по позиции и добавляем img с помощью append
   const cells = document.querySelectorAll('.cell');
   cells[position].append(img); // Заменяем appendChild на append
