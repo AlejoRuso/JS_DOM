@@ -29,9 +29,5 @@ jobs:
           find dist/ -type f -exec echo {} \;
         
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          enable_jekyll: false
-          force_orphan: true
+        id: deployment
+        uses: actions/deploy-pages@v4
