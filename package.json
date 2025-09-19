@@ -2,6 +2,7 @@
   "name": "hw_dom",
   "version": "1.0.0",
   "license": "MIT",
+  "homepage": "https://alejoruso.github.io/JS_DOM",
   "description": "Moving element game",
   "main": "src/index.js",
   "scripts": {
