@@ -28,6 +28,9 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'img/[name][ext]'
+        },
       },
     ],
   },
@@ -39,5 +42,5 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  mode: 'development',
+  mode: 'production',
 };
